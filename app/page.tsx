@@ -4,36 +4,36 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 items-center">
         {/* Left Section - Content */}
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           <div className="space-y-2">
-            <h1 className="text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 dark:text-white">
               Environmental work shaped by community.
             </h1>
-            <h2 className="text-3xl lg:text-4xl font-medium text-purple-600 dark:text-purple-400">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-purple-600 dark:text-purple-400">
               I work on environmental problems that don't have clean answers.
             </h2>
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4 pt-4 pb-2">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4 pb-2">
             <Link
               href="/#contact"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-br from-purple-600 to-purple-700 text-white rounded-lg font-medium shadow-lg shadow-purple-500/50 hover:shadow-xl hover:shadow-purple-500/60 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+              className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-gradient-to-br from-purple-600 to-purple-700 text-white rounded-lg font-medium shadow-lg shadow-purple-500/50 hover:shadow-xl hover:shadow-purple-500/60 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
             >
               Let's Connect
             </Link>
             <Link
               href="/#projects"
-              className="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border-0 border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100 rounded-lg font-medium shadow-lg shadow-gray-900/20 dark:shadow-gray-100/20 hover:shadow-xl hover:shadow-gray-900/30 dark:hover:shadow-gray-100/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+              className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-white dark:bg-gray-800 border-0 border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100 rounded-lg font-medium shadow-lg shadow-gray-900/20 dark:shadow-gray-100/20 hover:shadow-xl hover:shadow-gray-900/30 dark:hover:shadow-gray-100/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
             >
               View Projects
             </Link>
             <Link
               href="/resume.pdf"
-              className="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border-0 border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100 rounded-lg font-medium shadow-lg shadow-gray-900/20 dark:shadow-gray-100/20 hover:shadow-xl hover:shadow-gray-900/30 dark:hover:shadow-gray-100/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+              className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-white dark:bg-gray-800 border-0 border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100 rounded-lg font-medium shadow-lg shadow-gray-900/20 dark:shadow-gray-100/20 hover:shadow-xl hover:shadow-gray-900/30 dark:hover:shadow-gray-100/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
             >
               <svg
                 className="mr-2 w-4 h-4"
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Right Section - Profile Picture */}
-        <div className="flex justify-center lg:justify-center lg:pl-12">
+        <div className="flex justify-center lg:justify-center lg:pl-12 mt-6 lg:mt-0">
           <div className="relative inline-block">
             {/* Fuzzy depth layer */}
             <div
@@ -74,16 +74,16 @@ export default function Home() {
             <img
               src="/headshot.png"
               alt="Justin Dennis"
-              className="relative z-10 w-64 lg:w-72 h-auto rounded-2xl object-cover"
+              className="relative z-10 w-48 sm:w-56 md:w-64 lg:w-72 h-auto rounded-2xl object-cover"
             />
           </div>
         </div>
       </div>
 
       {/* My Approach Section */}
-      <section className="mt-8">
+      <section className="mt-8 px-4 sm:px-0">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white">
             My Approach
           </h2>
           <div className="prose prose-lg dark:prose-invert max-w-none">
@@ -99,10 +99,10 @@ export default function Home() {
 
 
       {/* Selected Work Section */}
-      <section className="mt-8">
-        <div className="max-w-5xl">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-3 text-gray-900 dark:text-white">
+      <section className="mt-8 px-4 sm:px-0">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-8 sm:mb-12 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 text-gray-900 dark:text-white">
               Selected work
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -110,7 +110,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {selectedWork.map((project, index) => (
               <Link
                 key={index}
@@ -147,14 +147,14 @@ export default function Home() {
                 </div>
 
                 {/* Content Area */}
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="text-gray-900 dark:text-gray-100 font-medium text-sm flex items-center group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                  <div className="text-gray-900 dark:text-gray-100 font-medium text-xs sm:text-sm flex items-center group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                     → View case study
                   </div>
                 </div>
@@ -166,9 +166,9 @@ export default function Home() {
       <div className="w-1/2 h-px bg-purple-600 dark:bg-purple-400 mt-8 mx-auto"></div>
 
       {/* How I Work Section */}
-      <section className="mt-8">
+      <section className="mt-8 px-4 sm:px-0">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white">
             How I Work
           </h2>
           <div className="prose prose-lg dark:prose-invert max-w-none">
@@ -182,28 +182,28 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <footer className="mt-8">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="bg-gradient-to-b from-purple-600 to-purple-800 rounded-2xl p-8 lg:p-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pl-10 lg:pl-14 items-center">
+      <footer className="mt-8 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-gradient-to-b from-purple-600 to-purple-800 rounded-2xl p-6 sm:p-8 lg:p-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 lg:pl-14 items-center">
               {/* Left Section */}
               <div>
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#F2F3F2]">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#F2F3F2]">
                   Let's Chat
                 </h2>
-                <p className="text-lg text-gray-800 mb-8 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-800 mb-6 sm:mb-8 leading-relaxed">
                   If you're navigating complexity and want a grounded perspective, we should connect.
                 </p>
                 <Link
                   href="/#contact"
-                  className="inline-block px-6 py-3 bg-white text-purple-600 hover:bg-purple-50 font-medium rounded-lg shadow-md shadow-white/10 hover:shadow-lg hover:shadow-white/15 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+                  className="inline-block px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-white text-purple-600 hover:bg-purple-50 font-medium rounded-lg shadow-md shadow-white/10 hover:shadow-lg hover:shadow-white/15 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
                 >
                   Get in touch
                 </Link>
               </div>
 
               {/* Right Section */}
-              <div className="space-y-5 ml-8 lg:ml-12">
+              <div className="space-y-4 sm:space-y-5 lg:ml-12">
                 <div>
                   <p className="text-sm text-[#F2F3F2] mb-1.5 font-medium">Email</p>
                   <a
@@ -273,15 +273,15 @@ export default function Home() {
     {/* Separator */}
     <div className="w-full border-t border-gray-300 dark:border-gray-700"></div>
 
-    {/* Legal Footer */}
-    <footer className="bg-[#F2F3F2]">
-      <div className="max-w-5xl mx-auto px-6 py-8">
-        <div className="text-center mb-6">
-          <p className="text-gray-600 dark:text-gray-400 text-sm">
-            © {new Date().getFullYear()} Rooted Connection LLC. All rights reserved.
-          </p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-6 text-sm">
+      {/* Legal Footer */}
+      <footer className="bg-[#F2F3F2]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+          <div className="text-center mb-4 sm:mb-6">
+            <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">
+              © {new Date().getFullYear()} Rooted Connection LLC. All rights reserved.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
           <Link
             href="/terms"
             className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"

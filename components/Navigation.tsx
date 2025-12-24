@@ -3,53 +3,53 @@ import Link from "next/link";
 export default function Navigation() {
   return (
     <nav className="border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-5xl mx-auto px-6 py-4">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-bold hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
+            className="text-lg sm:text-xl font-bold hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
           >
             Justin Dennis
           </Link>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-2 sm:space-x-4 md:space-x-6">
             <Link
               href="/"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="hidden sm:inline-block text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="hidden md:inline-block text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               About
             </Link>
             <Link
               href="/projects"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               Projects
             </Link>
             <Link
               href="/writing"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="hidden lg:inline-block text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               Writing
             </Link>
             <Link
               href="/services"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="hidden lg:inline-block text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               Contact
             </Link>
             {/* Social Media Icons */}
-            <div className="flex items-center space-x-3 ml-2 pl-2 border-l border-gray-200 dark:border-gray-700">
+            <div className="flex items-center space-x-2 sm:space-x-3 ml-1 sm:ml-2 pl-1 sm:pl-2 border-l border-gray-200 dark:border-gray-700">
               <a
                 href="https://linkedin.com"
                 target="_blank"
