@@ -8,7 +8,7 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 items-center">
         {/* Left Section - Content */}
         <div className="space-y-4 sm:space-y-6">
-          <div className="space-y-2">
+          <div className="space-y-2 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 dark:text-white">
               Environmental work shaped by community.
             </h1>
@@ -187,23 +187,25 @@ export default function Home() {
           <div className="bg-gradient-to-b from-purple-600 to-purple-800 rounded-2xl p-6 sm:p-8 lg:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 lg:pl-14 items-center">
               {/* Left Section */}
-              <div>
+              <div className="text-center lg:text-left">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#F2F3F2]">
                   Let's Chat
                 </h2>
                 <p className="text-base sm:text-lg text-gray-800 mb-6 sm:mb-8 leading-relaxed">
                   If you're navigating complexity and want a grounded perspective, we should connect.
                 </p>
-                <Link
-                  href="/#contact"
-                  className="inline-block px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-white text-purple-600 hover:bg-purple-50 font-medium rounded-lg shadow-md shadow-white/10 hover:shadow-lg hover:shadow-white/15 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
-                >
-                  Get in touch
-                </Link>
+                <div className="flex justify-center lg:justify-start">
+                  <Link
+                    href="/#contact"
+                    className="inline-block px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-white text-purple-600 hover:bg-purple-50 font-medium rounded-lg shadow-md shadow-white/10 hover:shadow-lg hover:shadow-white/15 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+                  >
+                    Get in touch
+                  </Link>
+                </div>
               </div>
 
               {/* Right Section */}
-              <div className="space-y-4 sm:space-y-5 lg:ml-12">
+              <div className="space-y-4 sm:space-y-5 lg:ml-12 text-center lg:text-left">
                 <div>
                   <p className="text-sm text-[#F2F3F2] mb-1.5 font-medium">Email</p>
                   <a
@@ -230,7 +232,7 @@ export default function Home() {
                 </div>
 
                 {/* Social Media Icons */}
-                <div className="flex items-center space-x-4 pt-2">
+                <div className="flex items-center justify-center lg:justify-start space-x-4 pt-2">
                   <a
                     href="https://linkedin.com"
                     target="_blank"
